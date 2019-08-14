@@ -12,7 +12,7 @@ wget \
      --restrict-file-names=windows  $1
 else
 echo -e "\033[1mcommand wget not found but installing it for, After it will re-run automatically\033[0m"
-sudo apt-get install wget
+apt-get install wget
 ./$0 $1
 fi
 elif [[ "$OSTYPE" == "darwin"* ]]; then
